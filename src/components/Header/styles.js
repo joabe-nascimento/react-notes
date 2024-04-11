@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { RiShutDownLine } from "react-icons/ri";
 
 export const Container = styled.header`
   grid-area: header;
@@ -16,7 +18,7 @@ export const Container = styled.header`
   padding: 0 80px;
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
   display: flex;
   align-items: center;
 
@@ -37,9 +39,9 @@ export const Profile = styled.div`
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
-    span {
+    strong { /* Change the color of the name */
       font-size: 18px;
-      color: ${({ theme }) => theme.COLORS_WHITE};
+      color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
 `;

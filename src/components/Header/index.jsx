@@ -4,7 +4,7 @@ import { Container, Profile, Logout } from "./styles";
 export function Header() {
   return (
     <Container>
-      <Profile>
+      <Profile to="/profile">
         <img
           src="https://avatars.githubusercontent.com/u/63386616?v=4"
           alt="Joabe Nascimento"
@@ -20,3 +20,4 @@ export function Header() {
     </Container>
   );
 }
+  
